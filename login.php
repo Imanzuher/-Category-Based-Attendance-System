@@ -24,10 +24,9 @@
 
 
            <form action="" method="post" class='d-flex p-5 border-0 bg-white rounded box flex-column'>
-                 <input class='text-white input-bgg form-control p-4 m-3' type="text" placeholder='USERNAME'>
-                 <input class='input-bgg form-control p-4 m-3' type="text" placeholder='CARD NUMBER'>
+                 <input class='text-black form-control p-4 m-3' type="text" placeholder='USERNAME'>
+                 <input class='text-black input-bgg  form-control p-4 m-3' type="text" placeholder='CARD NUMBER'>
         <button type="submit" class="bgy btn m-5 mb-3 login-btn p-3 rounded-pill">Login</button>
-
 
            </form>
   
