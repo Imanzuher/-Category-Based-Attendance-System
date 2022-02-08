@@ -46,11 +46,14 @@
 }
 
 .input-bgg {
+  background-color: rgb(108, 182, 157) !important;
   border: 0 !important;
   border-bottom: 2px solid #fff !important;
-  background-color: red !important;
 }
 
 .form-control:focus {
   outline-style: none !important;
+  box-shadow: 1px 1px 5px 1px #79d2a6 !important;
+  border-color: transparent !important;
+  color: white !important;
 }
