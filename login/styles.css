@@ -1,0 +1,108 @@
+:root {
+  --primaryColor: #f1f1f1;
+  --black4: #000;
+  --blue: #5995fd;
+  --white: #fff;
+  --grey: #959595;
+  --grey2: #666;
+  --grey3: #ccc;
+  --grey4: #d3d0cb;
+  --secondaryColor: #2b1f4d;
+  --yellow: #e2c044;
+  --green: #59b210;
+  --navy: #2e5266;
+  --babyblue: #6e8898;
+}
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: var(--navy);
+}
+
+.wrapper {
+  margin-left: 85px;
+  width: 500px;
+  background: var(--grey4);
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+.wrapper .title {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+  color: var(--yellow);
+  user-select: none;
+  border-radius: 15px 15px 0 0;
+  background: linear-gradient(var(--babyblue), var(--navy));
+}
+.wrapper form {
+  padding: 10px 30px 60px 30px;
+}
+.wrapper form .field {
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+  position: relative;
+}
+.wrapper form .field input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  font-size: 17px;
+  padding-left: 20px;
+  border: 1px solid var(--secondaryColor);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  background-color: var(--grey4);
+}
+.wrapper form .field input:focus,
+form .field input:valid {
+  border-color: var(--navy);
+}
+.wrapper form .field label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: var(--secondaryColor);
+  font-weight: 400;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+form .field input:focus ~ label,
+form .field input:valid ~ label {
+  top: 0%;
+  font-size: 16px;
+  color: var(--navy);
+  background: var(--grey4);
+  transform: translateY(-50%);
+}
+form .field input[type="submit"] {
+  color: var(--navy);
+  border: none;
+  padding-left: 0;
+  margin-top: -10px;
+  font-size: 25px;
+  font-weight: 300;
+  cursor: pointer;
+  background-color: var(--yellow);
+  transition: all 0.3s ease;
+}
+form .field input[type="submit"]:active {
+  transform: scale(0.95);
+}
+.yel-col {
+  color: var(--yellow);
+}
